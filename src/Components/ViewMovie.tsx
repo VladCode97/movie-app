@@ -14,7 +14,7 @@ const ViewMovie = ({
         <p>{movie.overview}</p>
         <button
           onClick={() => {
-            setSelectedMovie(null);
+            setSelectedMovie({ id: "1", overview: "", poster_path: "", title: "" });
           }}
         >
           Close
