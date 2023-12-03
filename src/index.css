@@ -1,0 +1,111 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+body {
+  background-color: #272829;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+h1,
+input,
+button {
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input,
+button {
+  font-size: 1rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  width: 25%;
+}
+
+section {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+button {
+  background-color: #ff0000;
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 0.125rem;
+  box-shadow: 0px 10px 15px -12px #ff0000;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.movie-card {
+  height: 30rem;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.movie-card__image {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-card__image > img {
+  height: 100%;
+  overflow: hidden;
+}
+
+.view-movie {
+  position: fixed;
+  background-color: rgba(39, 40, 41, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.view-movie__container {
+  width: 50%;
+  background-color: #272829;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.view-movie__container > button {
+  margin-top: 1rem;
+}
